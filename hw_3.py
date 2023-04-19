@@ -37,18 +37,22 @@ import random
 #     6
 #     -> 5
 
-# N = int(input("Input size in array: "))
-# X = int(input("input number the closest to X: "))
+# n = int(input("Input size the array: "))
+# x = int(input("Search for a close number: "))
 
 # A = []
-# for i in range(N):
-#     Ai = int(random.randint(0, 10))
+# min_index = float('inf')
+
+# for i in range(n):
+#     Ai = random.randint(0, 10)
 #     A.append(Ai)
-    
-
+#     diff = abs(x - A[i])
+#     if diff < min_index:
+#         min_index = i
+#         min_diff = diff
 # print(A)
-
-
+# print(f"The nearest number: {A[min_index]}")
+ 
 # *Задача 20: * В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность.
 # В случае с английским алфавитом очки распределяются так:A, E, I, O, U, L, N, S, T, R – 1 очко; D, G – 2 очка;
 #  B, C, M, P – 3 очка; F, H, V, W, Y – 4 очка; K – 5 очков; J, X – 8 очков; Q, Z – 10 очков. 
